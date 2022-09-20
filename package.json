@@ -1,0 +1,22 @@
+{
+  "name": "lifepunk",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel ./index.html",
+    "build": "parcel build ./index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VioletFlare/lifepunk/issues"
+  },
+  "homepage": "https://github.com/VioletFlare/lifepunk#readme",
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "jquery": "^3.6.1"
+  }
+}

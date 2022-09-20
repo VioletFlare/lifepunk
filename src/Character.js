@@ -234,3 +234,5 @@ class Character {
         return this.gifts;
     }
 }
+
+export default Character;
