@@ -4,6 +4,7 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "npm install --save-dev ./modules/parcel-transformer-hbs",
     "start": "parcel ./src/index.html",
     "build": "parcel build ./src/index.html"
   },
@@ -16,12 +17,13 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.7.0",
     "parcel": "^2.7.0",
+    "parcel-transformer-hbs": "file:modules/parcel-transformer-hbs",
     "process": "^0.11.10",
     "sass": "^1.54.9"
   },
   "dependencies": {
+    "handlebars": "^4.7.7",
     "jquery": "^3.6.1",
-    "page": "^1.11.6",
     "routerjs": "^2.4.5"
   }
 }
