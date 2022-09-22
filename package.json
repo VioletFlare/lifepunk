@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "npm install --save-dev ./modules/parcel-transformer-hbs",
     "start": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html"
+    "build": "parcel build ./src/index.html",
+    "debug-parcel": "set PARCEL_WORKERS=0 && set PARCEL_MAX_CONCURRENT_CALLS=1 && node --inspect-brk ./node_modules/parcel/lib/bin.js --log-level error --no-cache ./src/index.html"
   },
   "author": "",
   "license": "ISC",
