@@ -7,21 +7,43 @@ class Character {
         this.height = null;
         this.weight = null;
         this.hairType = null;
+        this.hairLength = null;
         this.hairColour = null;
         this.eyeColour = null;
         this.birthday = null;
         this.moralAlignment = null;
         this.attributes = {
+            ambition: null,
+            cheerfulness: null,
+            compassion: null,
+            courage: null,
+            availability: null,
+            imagination: null,
+            leadership: null,
+            modesty: null,
+            productivity: null,
+            professionalism: null,
+            sincerity: null,
+            charisma: null,
+            aggression: null,
+            arrogance: null,
+            cowardice: null,
+            folly: null,
+            intolerance: null,
+            badness: null,
+            pessimism: null,
+            rudeness: null,
+            vanity: null,
             strength: null,
             constitution: null,
             agility: null,
             intelligence: null,
             perception: null,
-            charisma: null,
             luck: null
         };
         this.zodiac = {
             sign: null,
+            element: null,
             ascending: null,
             affinity: null
         };
@@ -33,6 +55,8 @@ class Character {
         };
         this.gifts = {};
     }
+
+// -------------------------------------------------- SET
 
     setName(name) {
         this.name = name;
@@ -58,6 +82,10 @@ class Character {
         this.hairType = hairType;
     }
 
+    setHairType(hairLength) {
+        this.hairLength = hairLength;
+    }
+
     setHairColour(hairColour) {
         this.hairColour = hairColour;
     }
@@ -72,6 +100,90 @@ class Character {
 
     setMoralAlignment(moralAlignment) {
         this.moralAlignment = moralAlignment;
+    }
+
+    setAmbition(ambition) {
+        this.attributes.ambition = ambition;
+    }
+
+    setCheerfulness(cheerfulness) {
+        this.attributes.cheerfulness = cheerfulness;
+    }
+
+    setCompassion(compassion) {
+        this.attributes.compassion = compassion;
+    }
+
+    setCourage(courage) {
+        this.attributes.courage = courage;
+    }
+
+    setAvailability(availability) {
+        this.attributes.availability = availability;
+    }
+
+    setImagination(imagination) {
+        this.attributes.imagination = imagination;
+    }
+
+    setLeadership(leadership) {
+        this.attributes.leadership = leadership;
+    }
+
+    setModesty(modesty) {
+        this.attributes.modesty = modesty;
+    }
+
+    setProductivity(productivity) {
+        this.attributes.productivity = productivity;
+    }
+
+    setProfessionalism(professionalism) {
+        this.attributes.professionalism = professionalism;
+    }
+
+    setSincerity(sincerity) {
+        this.attributes.sincerity = sincerity;
+    }
+
+    setCharisma(charisma) {
+        this.attributes.charisma = charisma;
+    }
+
+    setAggression(aggression) {
+        this.attributes.aggression = aggression;
+    }
+
+    setArrogance(arrogance) {
+        this.attributes.arrogance = arrogance;
+    }
+
+    setCowardice(cowardice) {
+        this.attributes.cowardice = cowardice;
+    }
+
+    setFolly(folly) {
+        this.attributes.folly = folly;
+    }
+
+    setIntolerance(intolerance) {
+        this.attributes.intolerance = intolerance;
+    }
+
+    setBadness(badness) {
+        this.attributes.badness = badness;
+    }
+
+    setPessimism(pessimism) {
+        this.attributes.pessimism = pessimism;
+    }
+
+    setRudeness(rudeness) {
+        this.attributes.rudeness = rudeness;
+    }
+
+    setVanity(vanity) {
+        this.attributes.vanity = vanity;
     }
 
     setStrength(strength) {
@@ -94,16 +206,16 @@ class Character {
         this.attributes.perception = perception;
     }
 
-    setCharisma(charisma) {
-        this.attributes.charisma = charisma;
-    }
-
     setLuck(luck) {
         this.attributes.luck = luck;
     }
 
     setZodiacSign(sign) {
         this.zodiac.sign = sign;
+    }
+
+    setElement(element) {
+        this.zodiac.element = element;
     }
 
     setZodiacAscending(ascending) {
@@ -134,6 +246,8 @@ class Character {
         this.gifts = gifts;
     }
 
+// -------------------------------------------------- GET
+
     getName() {
         return this.name;
     }
@@ -158,6 +272,10 @@ class Character {
         return this.hairType;
     }
 
+    getHairType(hairLength) {
+        this.hairLength = hairLength;
+    }
+
     getHairColour() {
         return this.hairColour;
     }
@@ -174,36 +292,120 @@ class Character {
         return this.moralAlignment;
     }
 
-    getStrength() {
-        return this.attributes.strength;
+    getAmbition() {
+        return this.attributes.ambition = ambition;
     }
 
-    getConstitution() {
-        return this.attributes.constitution;
+    getCheerfulness() {
+        return this.attributes.cheerfulness = cheerfulness;
     }
 
-    getAgility() {
-        return this.attributes.agility;
+    getCompassion() {
+        return this.attributes.compassion = compassion;
     }
 
-    getIntelligence() {
-        return this.attributes.intelligence;
+    getCourage() {
+        return this.attributes.courage = courage;
     }
 
-    getPerception() {
-        return this.attributes.perception;
+    getAvailability() {
+        return this.attributes.availability = availability;
+    }
+
+    getImagination() {
+        return this.attributes.imagination = imagination;
+    }
+
+    getLeadership() {
+        return this.attributes.leadership = leadership;
+    }
+
+    getModesty() {
+        return this.attributes.modesty = modesty;
+    }
+
+    getProductivity() {
+        return this.attributes.productivity = productivity;
+    }
+
+    getProfessionalism() {
+        return this.attributes.professionalism = professionalism;
+    }
+
+    getSincerity() {
+        return this.attributes.sincerity = sincerity;
     }
 
     getCharisma() {
-        return this.attributes.charisma;
+        return this.attributes.charisma = charisma;
+    }
+
+    getAggression() {
+        return this.attributes.aggression = aggression;
+    }
+
+    getArrogance() {
+        return this.attributes.arrogance = arrogance;
+    }
+
+    getCowardice() {
+        return this.attributes.cowardice = cowardice;
+    }
+
+    getFolly() {
+        return this.attributes.folly = folly;
+    }
+
+    getIntolerance() {
+        return this.attributes.intolerance = intolerance;
+    }
+
+    getBadness() {
+        return this.attributes.badness = badness;
+    }
+
+    getPessimism() {
+        return this.attributes.pessimism = pessimism;
+    }
+
+    getRudeness() {
+        return this.attributes.rudeness = rudeness;
+    }
+
+    getVanity() {
+        return this.attributes.vanity = vanity;
+    }
+
+    getStrength() {
+        return this.attributes.strength = strength;
+    }
+
+    getConstitution() {
+        return this.attributes.constitution = constitution;
+    }
+
+    getAgility() {
+        return this.attributes.agility = agility;
+    }
+
+    getIntelligence() {
+        return this.attributes.intelligence = intelligence;
+    }
+
+    getPerception() {
+        return this.attributes.perception = perception;
     }
 
     getLuck() {
-        return this.attributes.luck;
+        return this.attributes.luck = luck;
     }
 
     getZodiacSign() {
         return this.zodiac.sign;
+    }
+
+    getZodiacElement() {
+        return this.zodiac.element;
     }
 
     getZodiacAscending() {
