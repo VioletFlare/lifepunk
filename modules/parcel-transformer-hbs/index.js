@@ -1,4 +1,4 @@
-const { Transformer } = require("@parcel/plugin")
+const { Transformer } = require("@parcel/plugin");
 const Handlebars  = require("handlebars");
 
 const transformer = new Transformer({
