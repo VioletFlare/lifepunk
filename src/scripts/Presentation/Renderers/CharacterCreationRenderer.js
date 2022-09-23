@@ -1,6 +1,6 @@
 import CharacterCreationFormTpl from '../../../templates/CharacterCreation/CharacterCreationForm.hbs';
 
-class RenderCharacterCreation {
+class CharacterCreationRenderer {
     render() {
         $("main").html(
             CharacterCreationFormTpl()
@@ -8,4 +8,4 @@ class RenderCharacterCreation {
     }
 }
 
-export default new RenderCharacterCreation();
+export default new CharacterCreationRenderer();

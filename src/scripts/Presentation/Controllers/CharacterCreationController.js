@@ -1,9 +1,9 @@
-import RenderCharacterCreation from '../Renderers/RenderCharacterCreation';
+import CharacterCreationRenderer from '../Renderers/CharacterCreationRenderer';
 
 class CharacterCreationController {
     registerRoutes (router) {
         router.get('/charactercreation', () => {
-            RenderCharacterCreation.render();
+            CharacterCreationRenderer.render();
         });
     }
 }
