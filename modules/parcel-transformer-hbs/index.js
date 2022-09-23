@@ -1,18 +1,5 @@
 const { Transformer } = require("@parcel/plugin")
 const Handlebars  = require("handlebars");
-const path = require('path');
-
-class PartialsRegistrator {
-
-  constructor() {
-    this.partialsBaseDirectory = path.join("__dirname", "");
-  }
-
-  register() {
-
-  }
-
-}
 
 const transformer = new Transformer({
   async transform({ asset }) {
