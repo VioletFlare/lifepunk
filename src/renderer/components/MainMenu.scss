@@ -1,0 +1,41 @@
+.mainMenu {
+    .logoContainer {
+        display: flex;
+        height: 20vh;
+    }
+
+    .logo {
+        margin: 0 auto;
+        font-size: 64px;
+    }
+
+    .logo, button, a {
+        color: lime;
+    }
+
+    button, a {
+        display: block;
+        width: 350px;
+        margin-bottom: 10px;
+        background-color: black;
+        border-color: lime;
+        border: 1px solid;
+        text-align: center;
+        text-decoration: none;
+        line-height: 35px
+    }
+
+    .lowerMenu {
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buttonPanel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}

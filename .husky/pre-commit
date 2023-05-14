@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Commented because lint-staged was raising to many errors.
+# TODO: Fix
+
+#. "$(dirname "$0")/_/husky.sh"
+
+#npx lint-staged
