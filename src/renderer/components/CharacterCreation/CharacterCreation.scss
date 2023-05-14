@@ -17,15 +17,12 @@ form {
   }
 
   label {
-    box-sizing:border-box;
     display: block;
     margin: auto 0;
-    vertical-align: middle;
     width: 250px;
   }
 
   input[type=text], input[type=checkbox], input[type=date], select {
-    box-sizing:border-box;
     text-align: left;
     vertical-align: middle;
     width: 250px;
@@ -34,14 +31,13 @@ form {
   h1 {
     // box-sizing:border-box;
     display: block;
-    height: 32px;
+    height: 16px;
     margin: auto 0;
-    vertical-align: middle;
-    width: 250px;
   }
 
   .attributes {
     div {
+      display: flex;
       height: 32px;
     }
   }

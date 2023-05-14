@@ -207,7 +207,9 @@ class CharacterCreation extends Component {
           </select>
         </p>
         <p className="attributes">
-          <h1>Attributi</h1>
+          <div>
+            <h1>Attributi</h1>
+          </div>
           <div className="attributesContainer">
             <input type="checkbox" className="characterPositiveAttributes1" name="characterPositiveAttributes" value="Ambizione" />
             <label htmlFor="characterPositiveAttributes1">Ambizione</label>
