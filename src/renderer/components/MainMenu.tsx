@@ -14,7 +14,7 @@ class MainMenu extends Component {
                 </div>
                 <div className="lowerMenu">
                     <div className="buttonPanel">
-                        <Link to="/home">New Game</Link>
+                        <Link to="/charactercreation">New Game</Link>
                         <Link to="/">Load Game</Link>
                         <button>Quit</button>
                     </div>

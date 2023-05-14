@@ -6,15 +6,16 @@ class CharacterCreation extends Component {
     render() {
         return (
             <form action="">
-                <p>
-                    <label htmlFor="characterName">Nome :</label>
+                <p className='name'>
+                    <label htmlFor="characterName">Nome:</label>
                     <input type="text" className="characterName" name="characterName" value=""></input>
                 </p>
-                <p>
-                    <label htmlFor="characterSurname">Cognome :</label>
+                <p className='surname'>
+                    <label htmlFor="characterSurname">Cognome:</label>
                     <input type="text" className="characterSurname" name="characterSurname" value=""></input>
                 </p>
-                <p>Sesso :
+                <p>
+                    <label htmlFor="characterSex">Sesso:</label>
                     <select className="characterSex" name="characterSex" required>
                         <option disabled={true} selected={true}  value="">Seleziona un opzione</option>
                         <option value="Maschio">Maschio</option>
@@ -22,10 +23,11 @@ class CharacterCreation extends Component {
                     </select>
                 </p>
                 <p>
-                    <label htmlFor="characterBirthday">Compleanno :</label>
+                    <label htmlFor="characterBirthday">Compleanno:</label>
                     <input type="date" className="characterBirthday" name="characterBirthday"></input>
                 </p>
-                <p>Segno zodiacale :
+                <p>
+                    <label htmlFor="characterZodiacSign">Segno zodiacale:</label>
                     <select className="characterZodiacSign" name="characterZodiacSign">
                         <option disabled={true} selected={true}  value="">Seleziona un opzione</option>
                         <option value="Acquario">Acquario</option>
@@ -42,7 +44,8 @@ class CharacterCreation extends Component {
                         <option value="Capricorno">Capricorno</option>
                     </select>
                 </p>
-                <p>Affinità :
+                <p>
+                    <label htmlFor="characterZodiacAffinity">Affinità zodiacale</label>
                     <select className="characterZodiacAffinity" name="characterZodiacAffinity">
                         <option disabled={true} selected={true}  value="">Seleziona un opzione (Facoltativo)</option>
                         <option value="Acquario">Acquario</option>
@@ -59,7 +62,8 @@ class CharacterCreation extends Component {
                         <option value="Capricorno">Capricorno</option>
                     </select>
                 </p>
-                <p>Orientamento :
+                <p>
+                    <label htmlFor="characterOrientation">Orientazione:</label>
                     <select className="characterOrientation" name="characterOrientation">
                         <option disabled={true} selected={true} value="">Seleziona un opzione</option>
                         <option value="Etero">Etero</option>
@@ -70,7 +74,8 @@ class CharacterCreation extends Component {
                         <option value="Polisessuale">Polisessuale</option>
                     </select>
                 </p>
-                <p>Allineamento morale :
+                <p>
+                    <label htmlFor="characterMoralAlignment"></label>
                     <select className="characterMoralAlignment" name="characterMoralAlignment">
                         <option disabled={true} selected={true} value="">Seleziona un opzione</option>
                         <option value="Legale Buono">Legale Buono</option>
@@ -85,14 +90,16 @@ class CharacterCreation extends Component {
                     </select>
                 </p>
                 <p>
-                    <label htmlFor="characterHeight">Altezza :</label>
+                    <label htmlFor="characterHeight">Altezza:</label>
                     <input type="text" className="characterHeight" name="characterHeight" value=""></input>
                 </p>
                 <p>
-                    <label htmlFor="characterWeight">Peso :</label>
+                    <label htmlFor="characterWeight">Peso:</label>
                     <input type="text" className="characterWeight" name="characterWeight" value=""></input>
                 </p>
-                <p>Tipologia di capelli :
+                <p>
+                    
+                    <label htmlFor="characterHairType">Tipologia di capelli:</label> 
                     <select className="characterHairType" name="characterHairType">
                         <option disabled={true} selected={true}  value="">Seleziona un opzione</option>
                         <option value="Lisci e sottili">Lisci e sottili</option>
@@ -109,7 +116,8 @@ class CharacterCreation extends Component {
                         <option value="Ricci afro">Ricci afro</option>
                     </select>
                 </p>
-                <p>Lunghezza dei capelli :
+                <p>
+                    <label htmlFor="characterHairLength">Lunghezza dei capelli:</label>
                     <select className="characterHairLength" name="characterHairLength">
                         <option disabled={true} selected={true}  value="">Seleziona un opzione</option>
                         <option value="Calvo/a">Calvo/a</option>
@@ -120,7 +128,10 @@ class CharacterCreation extends Component {
                         <option value="Lunghissimi">Lunghissimi</option>
                     </select>
                 </p>
-                <p>Colore dei capelli :
+                <p>
+                    <label htmlFor="characterHairColour">
+                        Colore dei capelli:
+                    </label>
                     <select className="characterHairColour" name="characterHairColour1">
                         <option disabled={true} selected={true}  value="">Seleziona un opzione</option>
                         <option value="Nero">Nero</option>
@@ -139,107 +150,107 @@ class CharacterCreation extends Component {
                         <option value="Albino">Albino</option>
                     </select>
                 </p>
-                <p>Colore degli occhi :
+                <p>
+                    <label htmlFor="characterEyeColour">
+                        Colore degli occhi:
+                    </label>
                     <select className="characterEyeColour" name="characterEyeColour">
                         <option disabled={true} selected={true}  value="">Seleziona un opzione</option>
-                        /* Percentuale Marroni : 70% */
+                        /* Percentuale Marroni: 70% */
                         <option value="Marroni">Marroni</option>
-                        /* Percentuale Blu : 10% */
+                        /* Percentuale Blu: 10% */
                         <option value="Blu">Blu</option>
-                        /* Percentuale Nocciola : 5% */
+                        /* Percentuale Nocciola: 5% */
                         <option value="Nocciola">Nocciola</option>
-                        /* Percentuale Ambra : 5% */
+                        /* Percentuale Ambra: 5% */
                         <option value="Ambra">Ambra</option>
-                        /* Percentuale Grigi : 3% */
+                        /* Percentuale Grigi: 3% */
                         <option value="Grigi">Grigi</option>
-                        /* Percentuale Verdi : 2% */
+                        /* Percentuale Verdi: 2% */
                         <option value="Verdi">Verdi</option>
-                        /* Percentuale Rossi : 1% */
+                        /* Percentuale Rossi: 1% */
                         <option value="Rossi">Rossi</option>
                     </select>
                 </p>
-                <p>Attributi :
-                    /* Positivi :
-                            Ambizione, allegria, compassione, coraggio, disponibilità, immaginazione, leadership, modestia, produttività, professionalità e sincerità */
-                    <input type="checkbox" className="characterPositiveAttributes1" name="characterPositiveAttributes"
-                        value="Ambizione"></input>
-                    <label htmlFor="characterPositiveAttributes1">Ambizione</label>
-                    <input type="checkbox" className="characterPositiveAttributes2" name="characterPositiveAttributes" value="Allegria"></input>
-                    <label htmlFor="characterPositiveAttributes2">Allegria</label>
-                    <input type="checkbox" className="characterPositiveAttributes3" name="characterPositiveAttributes"
-                        value="Compassione"></input>
-                    <label htmlFor="characterPositiveAttributes3">Compassione</label>
-                    <input type="checkbox" className="characterPositiveAttributes4" name="characterPositiveAttributes" value="Coraggio"></input>
-                    <label htmlFor="characterPositiveAttributes4">Coraggio</label>
-                    <input type="checkbox" className="characterPositiveAttributes5" name="characterPositiveAttributes"
-                        value="Disponibilità"></input>
-                    <label htmlFor="characterPositiveAttributes5">Disponibilità</label>
-                    <input type="checkbox" className="characterPositiveAttributes6" name="characterPositiveAttributes"
-                        value="Immaginazione"></input>
-                    <label htmlFor="characterPositiveAttributes6">Immaginazione</label>
-                    <input type="checkbox" className="characterPositiveAttributes7" name="characterPositiveAttributes"
-                        value="Leadership"></input>
-                    <label htmlFor="characterPositiveAttributes7">Leadership</label>
-                    <input type="checkbox" className="characterPositiveAttributes8" name="characterPositiveAttributes" value="Modestia"></input>
-                    <label htmlFor="characterPositiveAttributes8">Modestia</label>
-                    <input type="checkbox" className="characterPositiveAttributes9" name="characterPositiveAttributes"
-                        value="Produttività"></input>
-                    <label htmlFor="characterPositiveAttributes9">Produttività</label>
-                    <input type="checkbox" className="characterPositiveAttributes10" name="characterPositiveAttributes"
-                        value="Professionalità"></input>
-                    <label htmlFor="characterPositiveAttributes10">Professionalità</label>
-                    <input type="checkbox" className="characterPositiveAttributes11" name="characterPositiveAttributes"
-                        value="Sincerità"></input>
-                    <label htmlFor="characterPositiveAttributes11">Sincerità</label>
-                    <input type="checkbox" className="characterPositiveAttributes12" name="characterPositiveAttributes" value="Carisma"></input>
-                    <label htmlFor="characterPositiveAttributes12">Carisma</label>
-                    /* Negativi :
-                            Aggressività, arroganza, vigliaccheria, follia, intolleranza, cattiveria, pessimismo, maleducazione e vanità */
-                    <input type="checkbox" className="characterNegativeAttributes1" name="characterNegativeAttributes"
-                        value="Aggressività"></input>
-                    <label htmlFor="characterNegativeAttributes1">Aggressività</label>
-                    <input type="checkbox" className="characterNegativeAttributes2" name="characterNegativeAttributes"
-                        value="Arroganza"></input>
-                    <label htmlFor="characterNegativeAttributes2">Arroganza</label>
-                    <input type="checkbox" className="characterNegativeAttributes3" name="characterNegativeAttributes"
-                        value="Vigliaccheria"></input>
-                    <label htmlFor="characterNegativeAttributes3">Vigliaccheria</label>
-                    <input type="checkbox" className="characterNegativeAttributes4" name="characterNegativeAttributes" value="Follia"></input>
-                    <label htmlFor="characterNegativeAttributes4">Follia</label>
-                    <input type="checkbox" className="characterNegativeAttributes5" name="characterNegativeAttributes"
-                        value="Intolleranza"></input>
-                    <label htmlFor="characterNegativeAttributes5">Intolleranza</label>
-                    <input type="checkbox" className="characterNegativeAttributes6" name="characterNegativeAttributes"
-                        value="Cattiveria"></input>
-                    <label htmlFor="characterNegativeAttributes6">Cattiveria</label>
-                    <input type="checkbox" className="characterNegativeAttributes7" name="characterNegativeAttributes"
-                        value="Pessimismo"></input>
-                    <label htmlFor="characterNegativeAttributes7">Pessimismo</label>
-                    <input type="checkbox" className="characterNegativeAttributes8" name="characterNegativeAttributes"
-                        value="Maleducazione"></input>
-                    <label htmlFor="characterNegativeAttributes8">Maleducazione</label>
-                    <input type="checkbox" className="characterNegativeAttributes9" name="characterNegativeAttributes" value="Vanità"></input>
-                    <label htmlFor="characterNegativeAttributes9">Vanità</label>
-                    /* Fisici */
-                    <input type="checkbox" className="characterPhysicalAttributes1" name="characterPhysicalAttributes" value="Forza"></input>
-                    <label htmlFor="characterPhysicalAttributes1">Forza</label>
-                    <input type="checkbox" className="characterPhysicalAttributes2" name="characterPhysicalAttributes"
-                        value="Costituzione"></input>
-                    <label htmlFor="characterPhysicalAttributes2">Costituzione</label>
-                    <input type="checkbox" className="characterPhysicalAttributes3" name="characterPhysicalAttributes" value="Agilità"></input>
-                    <label htmlFor="characterPhysicalAttributes3">Agilità</label>
-                    /* Mentali */
-                    <input type="checkbox" className="characterMentalAttributes1" name="characterMentalAttributes" value="Intelligenza"></input>
-                    <label htmlFor="characterMentalAttributes1">Intelligenza</label>
-                    <input type="checkbox" className="characterMentalAttributes2" name="characterMentalAttributes" value="Percezione"></input>
-                    <label htmlFor="characterMentalAttributes2">Percezione</label>
-                    /* Non associabili direttamente */
-                    <input type="checkbox" className="characterUnrelatedAttributes1" name="characterUnrelatedAttributes"
-                        value="Fortuna"></input>
-                    <label htmlFor="characterUnrelatedAttributes1">Fortuna</label>
+                <p className="attributes">
+                    <h1>Attributi</h1>
+                    <div className="attributesContainer">
+                        <input type="checkbox" className="characterPositiveAttributes1" name="characterPositiveAttributes"
+                            value="Ambizione"></input>
+                        <label htmlFor="characterPositiveAttributes1">Ambizione</label>
+                        <input type="checkbox" className="characterPositiveAttributes2" name="characterPositiveAttributes" value="Allegria"></input>
+                        <label htmlFor="characterPositiveAttributes2">Allegria</label>
+                        <input type="checkbox" className="characterPositiveAttributes3" name="characterPositiveAttributes"
+                            value="Compassione"></input>
+                        <label htmlFor="characterPositiveAttributes3">Compassione</label>
+                        <input type="checkbox" className="characterPositiveAttributes4" name="characterPositiveAttributes" value="Coraggio"></input>
+                        <label htmlFor="characterPositiveAttributes4">Coraggio</label>
+                        <input type="checkbox" className="characterPositiveAttributes5" name="characterPositiveAttributes"
+                            value="Disponibilità"></input>
+                        <label htmlFor="characterPositiveAttributes5">Disponibilità</label>
+                        <input type="checkbox" className="characterPositiveAttributes6" name="characterPositiveAttributes"
+                            value="Immaginazione"></input>
+                        <label htmlFor="characterPositiveAttributes6">Immaginazione</label>
+                        <input type="checkbox" className="characterPositiveAttributes7" name="characterPositiveAttributes"
+                            value="Leadership"></input>
+                        <label htmlFor="characterPositiveAttributes7">Leadership</label>
+                        <input type="checkbox" className="characterPositiveAttributes8" name="characterPositiveAttributes" value="Modestia"></input>
+                        <label htmlFor="characterPositiveAttributes8">Modestia</label>
+                        <input type="checkbox" className="characterPositiveAttributes9" name="characterPositiveAttributes"
+                            value="Produttività"></input>
+                        <label htmlFor="characterPositiveAttributes9">Produttività</label>
+                        <input type="checkbox" className="characterPositiveAttributes10" name="characterPositiveAttributes"
+                            value="Professionalità"></input>
+                        <label htmlFor="characterPositiveAttributes10">Professionalità</label>
+                        <input type="checkbox" className="characterPositiveAttributes11" name="characterPositiveAttributes"
+                            value="Sincerità"></input>
+                        <label htmlFor="characterPositiveAttributes11">Sincerità</label>
+                        <input type="checkbox" className="characterPositiveAttributes12" name="characterPositiveAttributes" value="Carisma"></input>
+                        <label htmlFor="characterPositiveAttributes12">Carisma</label>
+                        <input type="checkbox" className="characterNegativeAttributes1" name="characterNegativeAttributes"
+                            value="Aggressività"></input>
+                        <label htmlFor="characterNegativeAttributes1">Aggressività</label>
+                        <input type="checkbox" className="characterNegativeAttributes2" name="characterNegativeAttributes"
+                            value="Arroganza"></input>
+                        <label htmlFor="characterNegativeAttributes2">Arroganza</label>
+                        <input type="checkbox" className="characterNegativeAttributes3" name="characterNegativeAttributes"
+                            value="Vigliaccheria"></input>
+                        <label htmlFor="characterNegativeAttributes3">Vigliaccheria</label>
+                        <input type="checkbox" className="characterNegativeAttributes4" name="characterNegativeAttributes" value="Follia"></input>
+                        <label htmlFor="characterNegativeAttributes4">Follia</label>
+                        <input type="checkbox" className="characterNegativeAttributes5" name="characterNegativeAttributes"
+                            value="Intolleranza"></input>
+                        <label htmlFor="characterNegativeAttributes5">Intolleranza</label>
+                        <input type="checkbox" className="characterNegativeAttributes6" name="characterNegativeAttributes"
+                            value="Cattiveria"></input>
+                        <label htmlFor="characterNegativeAttributes6">Cattiveria</label>
+                        <input type="checkbox" className="characterNegativeAttributes7" name="characterNegativeAttributes"
+                            value="Pessimismo"></input>
+                        <label htmlFor="characterNegativeAttributes7">Pessimismo</label>
+                        <input type="checkbox" className="characterNegativeAttributes8" name="characterNegativeAttributes"
+                            value="Maleducazione"></input>
+                        <label htmlFor="characterNegativeAttributes8">Maleducazione</label>
+                        <input type="checkbox" className="characterNegativeAttributes9" name="characterNegativeAttributes" value="Vanità"></input>
+                        <label htmlFor="characterNegativeAttributes9">Vanità</label>
+                        <input type="checkbox" className="characterPhysicalAttributes1" name="characterPhysicalAttributes" value="Forza"></input>
+                        <label htmlFor="characterPhysicalAttributes1">Forza</label>
+                        <input type="checkbox" className="characterPhysicalAttributes2" name="characterPhysicalAttributes"
+                            value="Costituzione"></input>
+                        <label htmlFor="characterPhysicalAttributes2">Costituzione</label>
+                        <input type="checkbox" className="characterPhysicalAttributes3" name="characterPhysicalAttributes" value="Agilità"></input>
+                        <label htmlFor="characterPhysicalAttributes3">A className="attributes"gilità</label>
+                        <input type="checkbox" className="characterMentalAttributes1" name="characterMentalAttributes" value="Intelligenza"></input>
+                        <label htmlFor="characterMentalAttributes1">Intelligenza</label>
+                        <input type="checkbox" className="characterMentalAttributes2" name="characterMentalAttributes" value="Percezione"></input>
+                        <label htmlFor="characterMentalAttributes2">Percezione</label>
+                        <input type="checkbox" className="characterUnrelatedAttributes1" name="characterUnrelatedAttributes"
+                            value="Fortuna"></input>
+                        <label htmlFor="characterUnrelatedAttributes1">Fortuna</label>
+                    </div>
                 </p>
-                <p>
-                    <span>Colori preferiti :</span>
+                <p className="favoriteColors">
+                    <h1>Colori preferiti:</h1>
+                    <div className="favoriteColorsContainer">
                     <input type="checkbox" className="characterFavouriteColour1" name="characterFavouriteColour" value="Bianco"></input>
                     <label htmlFor="characterFavouriteColour1">Bianco</label>
                     <input type="checkbox" className="characterFavouriteColour2" name="characterFavouriteColour" value="Rosso"></input>
@@ -268,6 +279,7 @@ class CharacterCreation extends Component {
                     <label htmlFor="characterFavouriteColour">Lampone</label>
                     <input type="checkbox" className="characterFavouriteColour14" name="characterFavouriteColour" value="Nero"></input>
                     <label htmlFor="characterFavouriteColour">Nero</label>
+                    </div>
                 </p>
                 <p>
                     <input type="submit" value="Submit"></input>
