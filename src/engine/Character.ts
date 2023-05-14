@@ -1,248 +1,301 @@
 class Character {
-    name: null;
-    surname: null;
-    sex: null;
-    height: null;
-    weight: null;
-    hairType: null;
-    hairLength: null;
-    hairColour: null;
-    eyeColour: null;
-    birthday: null;
-    moralAlignment: null;
-    attributes: { ambition: null; cheerfulness: null; compassion: null; courage: null; availability: null; imagination: null; leadership: null; modesty: null; productivity: null; professionalism: null; sincerity: null; charisma: null; aggression: null; arrogance: null; cowardice: null; folly: null; intolerance: null; badness: null; pessimism: null; rudeness: null; vanity: null; strength: null; constitution: null; agility: null; intelligence: null; perception: null; luck: null; };
-    zodiac: { sign: null; element: null; ascending: null; affinity: null; };
-    passions: {};
-    skills: {};
-    preferences: { favouriteColour: null; orientation: null; };
-    gifts: {};
+  name: null | string;
 
-    constructor() {
-        this.name = null;
-        this.surname = null;
-        this.sex = null;
-        this.height = null;
-        this.weight = null;
-        this.hairType = null;
-        this.hairLength = null;
-        this.hairColour = null;
-        this.eyeColour = null;
-        this.birthday = null;
-        this.moralAlignment = null;
-        this.attributes = {
-            ambition: null,
-            cheerfulness: null,
-            compassion: null,
-            courage: null,
-            availability: null,
-            imagination: null,
-            leadership: null,
-            modesty: null,
-            productivity: null,
-            professionalism: null,
-            sincerity: null,
-            charisma: null,
-            aggression: null,
-            arrogance: null,
-            cowardice: null,
-            folly: null,
-            intolerance: null,
-            badness: null,
-            pessimism: null,
-            rudeness: null,
-            vanity: null,
-            strength: null,
-            constitution: null,
-            agility: null,
-            intelligence: null,
-            perception: null,
-            luck: null
-        };
-        this.zodiac = {
-            sign: null,
-            element: null,
-            ascending: null,
-            affinity: null
-        };
-        this.passions = {};
-        this.skills = {};
-        this.preferences = {
-            favouriteColour: null,
-            orientation: null
-        };
-        this.gifts = {};
-    }
+  surname: null | string;
 
-// -------------------------------------------------- SET
+  sex: null | string;
 
-    setName(name) {
-        this.name = name;
-    }
+  height: null | number;
 
-    setSurname(surname) {
-        this.surname = surname;
-    }
+  weight: null | number;
 
-    setSex(sex) {
-        this.sex = sex;
-    }
+  hairType: null | string;
 
-    setHeight(height) {
-        this.height = height;
-    }
+  hairLength: null | string;
 
-    setWeight(weight) {
-        this.weight = weight;
-    }
+  hairColour: null | string;
 
-    setHairType(hairType) {
-        this.hairType = hairType;
-    }
+  eyeColour: null | string;
 
-    setHairLength(hairLength) {
-        this.hairLength = hairLength;
-    }
+  birthday: null | number;
 
-    setHairColour(hairColour) {
-        this.hairColour = hairColour;
-    }
+  moralAlignment: null | string;
 
-    setEyesColour(eyeColour) {
-        this.eyeColour = eyeColour;
-    }
+  attributes: {
+    ambition: null | number;
+    cheerfulness: null | number;
+    compassion: null | number;
+    courage: null | number;
+    availability: null | number;
+    imagination: null | number;
+    leadership: null | number;
+    modesty: null | number;
+    productivity: null | number;
+    professionalism: null | number;
+    sincerity: null | number;
+    charisma: null | number;
+    aggression: null | number;
+    arrogance: null | number;
+    cowardice: null | number;
+    folly: null | number;
+    intolerance: null | number;
+    badness: null | number;
+    pessimism: null | number;
+    rudeness: null | number;
+    vanity: null | number;
+    strength: null | number;
+    constitution: null | number;
+    agility: null | number;
+    intelligence: null | number;
+    perception: null | number;
+    luck: null | number;
+  };
 
-    setBirthday(birthday) {
-        this.birthday = birthday;
-    }
+  zodiac: {
+    sign: null | string;
+    element: null | string;
+    ascending: null | string;
+    affinity: null | string;
+  };
 
-    setMoralAlignment(moralAlignment) {
-        this.moralAlignment = moralAlignment;
-    }
+  // passions: {};
 
-    setAmbition(ambition) {
-        this.attributes.ambition = ambition;
-    }
+  // skills: {};
 
-    setCheerfulness(cheerfulness) {
-        this.attributes.cheerfulness = cheerfulness;
-    }
+  preferences: {
+    favouriteColour: null | string;
+    orientation: null | string;
+  };
 
-    setCompassion(compassion) {
-        this.attributes.compassion = compassion;
-    }
+  // gifts: {};
 
-    setCourage(courage) {
-        this.attributes.courage = courage;
-    }
+  constructor() {
+    this.name = null;
+    this.surname = null;
+    this.sex = null;
+    this.height = null;
+    this.weight = null;
+    this.hairType = null;
+    this.hairLength = null;
+    this.hairColour = null;
+    this.eyeColour = null;
+    this.birthday = null;
+    this.moralAlignment = null;
+    this.attributes = {
+      ambition: null,
+      cheerfulness: null,
+      compassion: null,
+      courage: null,
+      availability: null,
+      imagination: null,
+      leadership: null,
+      modesty: null,
+      productivity: null,
+      professionalism: null,
+      sincerity: null,
+      charisma: null,
+      aggression: null,
+      arrogance: null,
+      cowardice: null,
+      folly: null,
+      intolerance: null,
+      badness: null,
+      pessimism: null,
+      rudeness: null,
+      vanity: null,
+      strength: null,
+      constitution: null,
+      agility: null,
+      intelligence: null,
+      perception: null,
+      luck: null,
+    };
+    this.zodiac = {
+      sign: null,
+      element: null,
+      ascending: null,
+      affinity: null,
+    };
+    // this.passions = {};
+    // this.skills = {};
+    this.preferences = {
+      favouriteColour: null,
+      orientation: null,
+    };
+    // this.gifts = {};
+  }
 
-    setAvailability(availability) {
-        this.attributes.availability = availability;
-    }
+  // -------------------------------------------------- SET
 
-    setImagination(imagination) {
-        this.attributes.imagination = imagination;
-    }
+  setName(name: string) {
+    this.name = name;
+  }
 
-    setLeadership(leadership) {
-        this.attributes.leadership = leadership;
-    }
+  setSurname(surname: string) {
+    this.surname = surname;
+  }
 
-    setModesty(modesty) {
-        this.attributes.modesty = modesty;
-    }
+  setSex(sex: string) {
+    this.sex = sex;
+  }
 
-    setProductivity(productivity) {
-        this.attributes.productivity = productivity;
-    }
+  setHeight(height: number) {
+    this.height = height;
+  }
 
-    setProfessionalism(professionalism) {
-        this.attributes.professionalism = professionalism;
-    }
+  setWeight(weight: number) {
+    this.weight = weight;
+  }
 
-    setSincerity(sincerity) {
-        this.attributes.sincerity = sincerity;
-    }
+  setHairType(hairType: string) {
+    this.hairType = hairType;
+  }
 
-    setCharisma(charisma) {
-        this.attributes.charisma = charisma;
-    }
+  setHairLength(hairLength: string) {
+    this.hairLength = hairLength;
+  }
 
-    setAggression(aggression) {
-        this.attributes.aggression = aggression;
-    }
+  setHairColour(hairColour: string) {
+    this.hairColour = hairColour;
+  }
 
-    setArrogance(arrogance) {
-        this.attributes.arrogance = arrogance;
-    }
+  setEyesColour(eyeColour: string) {
+    this.eyeColour = eyeColour;
+  }
 
-    setCowardice(cowardice) {
-        this.attributes.cowardice = cowardice;
-    }
+  setBirthday(birthday: number) {
+    this.birthday = birthday;
+  }
 
-    setFolly(folly) {
-        this.attributes.folly = folly;
-    }
+  setMoralAlignment(moralAlignment: string) {
+    this.moralAlignment = moralAlignment;
+  }
 
-    setIntolerance(intolerance) {
-        this.attributes.intolerance = intolerance;
-    }
+  setAmbition(ambition: number) {
+    this.attributes.ambition = ambition;
+  }
 
-    setBadness(badness) {
-        this.attributes.badness = badness;
-    }
+  setCheerfulness(cheerfulness: number) {
+    this.attributes.cheerfulness = cheerfulness;
+  }
 
-    setPessimism(pessimism) {
-        this.attributes.pessimism = pessimism;
-    }
+  setCompassion(compassion: number) {
+    this.attributes.compassion = compassion;
+  }
 
-    setRudeness(rudeness) {
-        this.attributes.rudeness = rudeness;
-    }
+  setCourage(courage: number) {
+    this.attributes.courage = courage;
+  }
 
-    setVanity(vanity) {
-        this.attributes.vanity = vanity;
-    }
+  setAvailability(availability: number) {
+    this.attributes.availability = availability;
+  }
 
-    setStrength(strength) {
-        this.attributes.strength = strength;
-    }
+  setImagination(imagination: number) {
+    this.attributes.imagination = imagination;
+  }
 
-    setConstitution(constitution) {
-        this.attributes.constitution = constitution;
-    }
+  setLeadership(leadership: number) {
+    this.attributes.leadership = leadership;
+  }
 
-    setAgility(agility) {
-        this.attributes.agility = agility;
-    }
+  setModesty(modesty: number) {
+    this.attributes.modesty = modesty;
+  }
 
-    setIntelligence(intelligence) {
-        this.attributes.intelligence = intelligence;
-    }
+  setProductivity(productivity: number) {
+    this.attributes.productivity = productivity;
+  }
 
-    setPerception(perception) {
-        this.attributes.perception = perception;
-    }
+  setProfessionalism(professionalism: number) {
+    this.attributes.professionalism = professionalism;
+  }
 
-    setLuck(luck) {
-        this.attributes.luck = luck;
-    }
+  setSincerity(sincerity: number) {
+    this.attributes.sincerity = sincerity;
+  }
 
-    setZodiacSign(sign) {
-        this.zodiac.sign = sign;
-    }
+  setCharisma(charisma: number) {
+    this.attributes.charisma = charisma;
+  }
 
-    setElement(element) {
-        this.zodiac.element = element;
-    }
+  setAggression(aggression: number) {
+    this.attributes.aggression = aggression;
+  }
 
-    setZodiacAscending(ascending) {
-        this.zodiac.ascending = ascending;
-    }
+  setArrogance(arrogance: number) {
+    this.attributes.arrogance = arrogance;
+  }
 
-    setZodiacAffinity(affinity) {
-        this.zodiac.affinity = affinity;
-    }
+  setCowardice(cowardice: number) {
+    this.attributes.cowardice = cowardice;
+  }
 
+  setFolly(folly: number) {
+    this.attributes.folly = folly;
+  }
+
+  setIntolerance(intolerance: number) {
+    this.attributes.intolerance = intolerance;
+  }
+
+  setBadness(badness: number) {
+    this.attributes.badness = badness;
+  }
+
+  setPessimism(pessimism: number) {
+    this.attributes.pessimism = pessimism;
+  }
+
+  setRudeness(rudeness: number) {
+    this.attributes.rudeness = rudeness;
+  }
+
+  setVanity(vanity: number) {
+    this.attributes.vanity = vanity;
+  }
+
+  setStrength(strength: number) {
+    this.attributes.strength = strength;
+  }
+
+  setConstitution(constitution: number) {
+    this.attributes.constitution = constitution;
+  }
+
+  setAgility(agility: number) {
+    this.attributes.agility = agility;
+  }
+
+  setIntelligence(intelligence: number) {
+    this.attributes.intelligence = intelligence;
+  }
+
+  setPerception(perception: number) {
+    this.attributes.perception = perception;
+  }
+
+  setLuck(luck: number) {
+    this.attributes.luck = luck;
+  }
+
+  setZodiacSign(sign: string) {
+    this.zodiac.sign = sign;
+  }
+
+  setElement(element: string) {
+    this.zodiac.element = element;
+  }
+
+  setZodiacAscending(ascending: string) {
+    this.zodiac.ascending = ascending;
+  }
+
+  setZodiacAffinity(affinity: string) {
+    this.zodiac.affinity = affinity;
+  }
+
+  /*
     setPassions(passions) {
         this.passions = passions;
     }
@@ -250,207 +303,214 @@ class Character {
     setSkills(skills) {
         this.skills = skills;
     }
+*/
+  setFavouriteColour(favouriteColour: string) {
+    this.preferences.favouriteColour = favouriteColour;
+  }
 
-    setFavouriteColour(favouriteColour) {
-        this.preferences.favouriteColour = favouriteColour;
-    }
+  setOrientation(orientation: string) {
+    this.preferences.orientation = orientation;
+  }
 
-    setOrientation(orientation) {
-        this.preferences.orientation = orientation;
-    }
-
+  /*
     setGifts(gifts) {
         this.gifts = gifts;
     }
+*/
 
-// -------------------------------------------------- GET
+  // -------------------------------------------------- GET
 
-    getName() {
-        return this.name;
-    }
+  getName() {
+    return this.name;
+  }
 
-    getSurname() {
-        return this.surname;
-    }
+  getSurname() {
+    return this.surname;
+  }
 
-    getSex() {
-        return this.sex;
-    }
+  getSex() {
+    return this.sex;
+  }
 
-    getHeight() {
-        return this.height;
-    }
+  getHeight() {
+    return this.height;
+  }
 
-    getWeight() {
-        return this.weight;
-    }
+  getWeight() {
+    return this.weight;
+  }
 
-    getHairType() {
-        return this.hairType;
-    }
+  getHairType() {
+    return this.hairType;
+  }
 
-    getHairLength() {
-        return this.hairLength;
-    }
+  getHairLength() {
+    return this.hairLength;
+  }
 
-    getHairColour() {
-        return this.hairColour;
-    }
+  getHairColour() {
+    return this.hairColour;
+  }
 
-    getEyesColour() {
-        return this.eyeColour;
-    }
+  getEyesColour() {
+    return this.eyeColour;
+  }
 
-    getBirthday() {
-        return this.birthday;
-    }
+  getBirthday() {
+    return this.birthday;
+  }
 
-    getMoralAlignment() {
-        return this.moralAlignment;
-    }
+  getMoralAlignment() {
+    return this.moralAlignment;
+  }
 
-    getAmbition() {
-        return this.attributes.ambition
-    }
+  getAmbition() {
+    return this.attributes.ambition;
+  }
 
-    getCheerfulness() {
-        return this.attributes.cheerfulness
-    }
+  getCheerfulness() {
+    return this.attributes.cheerfulness;
+  }
 
-    getCompassion() {
-        return this.attributes.compassion
-    }
+  getCompassion() {
+    return this.attributes.compassion;
+  }
 
-    getCourage() {
-        return this.attributes.courage 
-    }
+  getCourage() {
+    return this.attributes.courage;
+  }
 
-    getAvailability() {
-        return this.attributes.availability
-    }
+  getAvailability() {
+    return this.attributes.availability;
+  }
 
-    getImagination() {
-        return this.attributes.imagination
-    }
+  getImagination() {
+    return this.attributes.imagination;
+  }
 
-    getLeadership() {
-        return this.attributes.leadership
-    }
+  getLeadership() {
+    return this.attributes.leadership;
+  }
 
-    getModesty() {
-        return this.attributes.modesty
-    }
+  getModesty() {
+    return this.attributes.modesty;
+  }
 
-    getProductivity() 
-        return this.attributes.productivity
-    }
+  getProductivity() {
+    return this.attributes.productivity;
+  }
 
-    getProfessionalism() {
-        return this.attributes.professionalism
-    }
+  getProfessionalism() {
+    return this.attributes.professionalism;
+  }
 
-    getSincerity() {
-        return this.attributes.sincerity
-    }
+  getSincerity() {
+    return this.attributes.sincerity;
+  }
 
-    getCharisma() {
-        return this.attributes.charisma = charisma;
-    }
+  getCharisma() {
+    return this.attributes.charisma;
+  }
 
-    getAggression() {
-        return this.attributes.aggression = aggression;
-    }
+  getAggression() {
+    return this.attributes.aggression;
+  }
 
-    getArrogance() {
-        return this.attributes.arrogance = arrogance;
-    }
+  getArrogance() {
+    return this.attributes.arrogance;
+  }
 
-    getCowardice() {
-        return this.attributes.cowardice = cowardice;
-    }
+  getCowardice() {
+    return this.attributes.cowardice;
+  }
 
-    getFolly() {
-        return this.attributes.folly = folly;
-    }
+  getFolly() {
+    return this.attributes.folly;
+  }
 
-    getIntolerance() {
-        return this.attributes.intolerance 
-    }
+  getIntolerance() {
+    return this.attributes.intolerance;
+  }
 
-    getBadness() {
-        return this.attributes.badness
-    }
+  getBadness() {
+    return this.attributes.badness;
+  }
 
-    getPessimism() {
-        return this.attributes.pessimism
-    }
+  getPessimism() {
+    return this.attributes.pessimism;
+  }
 
-    getRudeness() {
-        return this.attributes.rudeness
-    }
+  getRudeness() {
+    return this.attributes.rudeness;
+  }
 
-    getVanity() {
-        return this.attributes.vanity
-    }
+  getVanity() {
+    return this.attributes.vanity;
+  }
 
-    getStrength() {
-        return this.attributes.strength
-    }
+  getStrength() {
+    return this.attributes.strength;
+  }
 
-    getConstitution() {
-        return this.attributes.constitution
-    }
+  getConstitution() {
+    return this.attributes.constitution;
+  }
 
-    getAgility() {
-        return this.attributes.agility
-    }
+  getAgility() {
+    return this.attributes.agility;
+  }
 
-    getIntelligence() {
-        return this.attributes.intelligence
+  getIntelligence() {
+    return this.attributes.intelligence;
+  }
 
-    getPerception() {
-        return this.attributes.perceptionì
-    }
+  getPerception() {
+    return this.attributes.perception;
+  }
 
-    getLuck() {
-        return this.attributes.luck = luck;
-    }
+  getLuck() {
+    return this.attributes.luck;
+  }
 
-    getZodiacSign() {
-        return this.zodiac.sign;
-    }
+  getZodiacSign() {
+    return this.zodiac.sign;
+  }
 
-    getZodiacElement() {
-        return this.zodiac.element;
-    }
+  getZodiacElement() {
+    return this.zodiac.element;
+  }
 
-    getZodiacAscending() {
-        return this.zodiac.ascending;
-    }
+  getZodiacAscending() {
+    return this.zodiac.ascending;
+  }
 
-    getZodiacAffinity() {
-        return this.zodiac.affinity;
-    }
+  getZodiacAffinity() {
+    return this.zodiac.affinity;
+  }
 
-    getPassions() {
-        return this.passions;
-    }
+  /*
+  getPassions() {
+    return this.passions;
+  }
 
-    getSkills() {
-        return this.skills;
-    }
+  getSkills() {
+    return this.skills;
+  }
+*/
 
-    getFavouriteColour() {
-        return this.preferences.favouriteColour;
-    }
+  getFavouriteColour() {
+    return this.preferences.favouriteColour;
+  }
 
-    getOrientation() {
-        return this.preferences.orientation;
-    }
+  getOrientation() {
+    return this.preferences.orientation;
+  }
 
-    getGifts() {
-        return this.gifts;
-    }
+  /*
+  getGifts() {
+    return this.gifts;
+  }
+*/
 }
 
 export default Character;
