@@ -1,20 +1,19 @@
 form {
-background-color: #fff;
-}
+  background-color: #fff;
 
-p {
-  display: flex;
-  justify-content: space-between;
-}
+  p {
+    display: flex;
+    justify-content: space-between;
+  }
 
-label {
-  text-align: left;
-  vertical-align: middle;
-  width: 200;
-}
+  label {
+    display: block;
+    margin: auto 0;
+  }
 
-input[type=text] {
-  text-align: left;
-  vertical-align: middle;
-  width: 200px;
+  input[type=text] {
+    text-align: left;
+    vertical-align: middle;
+    width: 200px;
+  }
 }
