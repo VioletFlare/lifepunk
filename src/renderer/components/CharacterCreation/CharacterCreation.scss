@@ -1,19 +1,48 @@
 form {
   background-color: #fff;
 
-  p {
+  p:not(p.attributes):not(p.favoriteColors) {
     display: flex;
+    height: 32px;
+    width: 50%;
     justify-content: space-between;
   }
 
-  label {
-    display: block;
+  p.attributes, p.favoriteColors {
+    // display: flex;
+    height: auto;
     margin: auto 0;
+    vertical-align: middle;
+    width: 100px;
   }
 
-  input[type=text] {
+  label {
+    box-sizing:border-box;
+    display: block;
+    margin: auto 0;
+    vertical-align: middle;
+    width: 250px;
+  }
+
+  input[type=text], input[type=checkbox], input[type=date], select {
+    box-sizing:border-box;
     text-align: left;
     vertical-align: middle;
-    width: 200px;
+    width: 250px;
+  }
+
+  h1 {
+    // box-sizing:border-box;
+    display: block;
+    height: 32px;
+    margin: auto 0;
+    vertical-align: middle;
+    width: 250px;
+  }
+
+  .attributes {
+    div {
+      height: 32px;
+    }
   }
 }
