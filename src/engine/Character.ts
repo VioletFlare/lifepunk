@@ -39,7 +39,6 @@ class Character {
     cowardice: null | number;
     folly: null | number;
     intolerance: null | number;
-    badness: null | number;
     pessimism: null | number;
     rudeness: null | number;
     vanity: null | number;
@@ -99,7 +98,6 @@ class Character {
       cowardice: null,
       folly: null,
       intolerance: null,
-      badness: null,
       pessimism: null,
       rudeness: null,
       vanity: null,
@@ -237,10 +235,6 @@ class Character {
 
   setIntolerance(intolerance: number) {
     this.attributes.intolerance = intolerance;
-  }
-
-  setBadness(badness: number) {
-    this.attributes.badness = badness;
   }
 
   setPessimism(pessimism: number) {
@@ -430,10 +424,6 @@ class Character {
 
   getIntolerance() {
     return this.attributes.intolerance;
-  }
-
-  getBadness() {
-    return this.attributes.badness;
   }
 
   getPessimism() {
