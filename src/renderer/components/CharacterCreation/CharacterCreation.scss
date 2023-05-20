@@ -6,10 +6,18 @@
   height: 100vh;
   color: lime;
 
-  p:not(p.attributes):not(p.favoriteColors) {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 5px;
+  .anagraphic {
+    p {
+      label {
+        max-width: 180px;
+        display: inline-block;
+        width: 100%;
+      }
+
+      display: flex;
+      gap: 15px;
+      padding-bottom: 5px;
+    }
   }
 
   p.attributes, p.favoriteColors {
@@ -18,6 +26,11 @@
     margin: auto 0;
     vertical-align: middle;
     padding-top: 10px;
+
+    div {
+      display: flex;
+      flex-wrap: wrap;
+    }
 
     ul {
       li {
@@ -46,25 +59,12 @@
     margin: auto 0;
   }
 
-  .attributes {
-    div {
-      display: flex;
-      flex-wrap: wrap;
-    }
-  }
-
-  .favoriteColors {
-    div {
-      display: flex;
-      flex-wrap: wrap;
-    }
-  }
-
   .submit {
     padding-top: 10px;
 
     input[type=submit] {
       margin: 0 auto;
+      display: block;
     }
   }
 }

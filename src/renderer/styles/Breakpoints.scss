@@ -1,9 +1,26 @@
-@use 'sass-mq/mq' as * with (
-  $breakpoints: (
-    mobile: 375px,
-    tablet: 768px,
-    desktop: 1024px,
-    desktopLarge: 1440px,
-    desktop4K: 2560px
-  )
+@use 'sass-mq/mq.import' as mq;
+
+$breakpoints: (
+  mobile: 375px,
+  tablet: 768px,
+  desktop: 1024px,
+  desktopLarge: 1440px,
+  desktop4K: 2560px,
 );
+
+@mixin m(
+  $from: false,
+  $until: false,
+  $and: false,
+  $media-type: screen,
+) {
+  @include mq.mq(
+    $from: $from,
+    $until: $until,
+    $and: $and,
+    $media-type: $media-type,
+    $breakpoints: $breakpoints
+  ) {
+    @content;
+  };
+}

@@ -5,217 +5,222 @@ class CharacterCreation extends Component {
   render() {
     return (
       <form className="characterCreationForm" action="">
-        <p className="name">
-          <label htmlFor="characterName">Nome:</label>
-          <input
-            type="text"
-            className="characterName"
-            name="characterName"
-            value=""
-          />
-        </p>
-        <p className="surname">
-          <label htmlFor="characterSurname">Cognome:</label>
-          <input
-            type="text"
-            className="characterSurname"
-            name="characterSurname"
-            value=""
-          />
-        </p>
-        <p>
-          <label htmlFor="characterSex">Sesso:</label>
-          <select className="characterSex" name="characterSex" required>
-            <option disabled selected value="">
-              Seleziona un opzione
-            </option>
-            <option value="Maschio">Maschio</option>
-            <option value="Femmina">Femmina</option>
-          </select>
-        </p>
-        <p>
-          <label htmlFor="characterBirthday">Compleanno:</label>
-          <input
-            type="date"
-            className="characterBirthday"
-            name="characterBirthday"
-          />
-        </p>
-        <p>
-          <label htmlFor="characterZodiacSign">Segno zodiacale:</label>
-          <select className="characterZodiacSign" name="characterZodiacSign">
-            <option disabled selected value="">
-              Seleziona un opzione
-            </option>
-            <option value="Acquario">Acquario</option>
-            <option value="Pesci">Pesci</option>
-            <option value="Ariete">Ariete</option>
-            <option value="Toro">Toro</option>
-            <option value="Gemelli">Gemelli</option>
-            <option value="Cancro">Cancro</option>
-            <option value="Leone">Leone</option>
-            <option value="Vergine">Vergine</option>
-            <option value="Bilancia">Bilancia</option>
-            <option value="Scorpione">Scorpione</option>
-            <option value="Sagittario">Sagittario</option>
-            <option value="Capricorno">Capricorno</option>
-          </select>
-        </p>
-        <p>
-          <label htmlFor="characterZodiacAffinity">Affinità zodiacale</label>
-          <select
-            className="characterZodiacAffinity"
-            name="characterZodiacAffinity"
-          >
-            <option disabled selected value="">
-              Seleziona un opzione (Facoltativo)
-            </option>
-            <option value="Acquario">Acquario</option>
-            <option value="Pesci">Pesci</option>
-            <option value="Ariete">Ariete</option>
-            <option value="Toro">Toro</option>
-            <option value="Gemelli">Gemelli</option>
-            <option value="Cancro">Cancro</option>
-            <option value="Leone">Leone</option>
-            <option value="Vergine">Vergine</option>
-            <option value="Bilancia">Bilancia</option>
-            <option value="Scorpione">Scorpione</option>
-            <option value="Sagittario">Sagittario</option>
-            <option value="Capricorno">Capricorno</option>
-          </select>
-        </p>
-        <p>
-          <label htmlFor="characterOrientation">Orientazione:</label>
-          <select className="characterOrientation" name="characterOrientation">
-            <option disabled selected value="">
-              Seleziona un opzione
-            </option>
-            <option value="Etero">Etero</option>
-            <option value="Asessuale">Asessuale</option>
-            <option value="Omosessuale">Omosessuale (Gay/Lesbica)</option>
-            <option value="Bisessuale">Bisessuale</option>
-            <option value="Pansessuale">Pansessuale</option>
-            <option value="Polisessuale">Polisessuale</option>
-          </select>
-        </p>
-        <p>
-          <label htmlFor="characterMoralAlignment" />
-          <select
-            className="characterMoralAlignment"
-            name="characterMoralAlignment"
-          >
-            <option disabled selected value="">
-              Seleziona un opzione
-            </option>
-            <option value="Legale Buono">Legale Buono</option>
-            <option value="Neutrale Buono">Neutrale Buono</option>
-            <option value="Caotico Buono">Caotico Buono</option>
-            <option value="Neutrale Legale">Neutrale Legale</option>
-            <option value="Neutrale Puro">Neutrale Puro</option>
-            <option value="Neutrale Caotico">Neutrale Caotico</option>
-            <option value="Legale Malvagio">Legale Malvagio</option>
-            <option value="Neutrale Malvagio">Neutrale Malvagio</option>
-            <option value="Caotico Malvagio">Caotico Malvagio</option>
-          </select>
-        </p>
-        <p>
-          <label htmlFor="characterHeight">Altezza:</label>
-          <input
-            type="text"
-            className="characterHeight"
-            name="characterHeight"
-            value=""
-          />
-        </p>
-        <p>
-          <label htmlFor="characterWeight">Peso:</label>
-          <input
-            type="text"
-            className="characterWeight"
-            name="characterWeight"
-            value=""
-          />
-        </p>
-        <p>
-          <label htmlFor="characterHairType">Tipologia di capelli:</label>
-          <select className="characterHairType" name="characterHairType">
-            <option disabled selected value="">
-              Seleziona un opzione
-            </option>
-            <option value="Lisci e sottili">Lisci e sottili</option>
-            <option value="Lisci e spessi">Lisci e spessi</option>
-            <option value="Ondulati">Ondulati</option>
-            <option value="Mossi e sottili">Mossi e sottili</option>
-            <option value="Mossi e spessi">Mossi e spessi</option>
-            <option value="Mossi e foltissimi">Mossi e foltissimi</option>
-            <option value="Riccio morbclasso dal diametro ampio">
-              Riccio morbclasso dal diametro ampio
-            </option>
-            <option value="Ricci a spirale">Ricci a spirale</option>
-            <option value="Ricci a cavatappi">Ricci a cavatappi</option>
-            <option value="Ricci piccolissimi">Ricci piccolissimi</option>
-            <option value="Ricci a Z">Ricci a Z</option>
-            <option value="Ricci afro">Ricci afro</option>
-          </select>
-        </p>
-        <p>
-          <label htmlFor="characterHairLength">Lunghezza dei capelli:</label>
-          <select className="characterHairLength" name="characterHairLength">
-            <option disabled selected value="">
-              Seleziona un opzione
-            </option>
-            <option value="Calvo/a">Calvo/a</option>
-            <option value="Rasati">Rasati</option>
-            <option value="Corti">Corti</option>
-            <option value="Medi">Medi</option>
-            <option value="Lunghi">Lunghi</option>
-            <option value="Lunghissimi">Lunghissimi</option>
-          </select>
-        </p>
-        <p>
-          <label htmlFor="characterHairColour">Colore dei capelli:</label>
-          <select className="characterHairColour" name="characterHairColour1">
-            <option disabled selected value="">
-              Seleziona un opzione
-            </option>
-            <option value="Nero">Nero</option>
-            <option value="Bruno">Bruno</option>
-            <option value="Castano scuro">Castano scuro</option>
-            <option value="Castano">Castano</option>
-            <option value="Castano chiaro">Castano chiaro</option>
-            <option value="Rosso scuro">Rosso scuro</option>
-            <option value="Rosso">Rosso</option>
-            <option value="Rosso chiaro">Rosso chiaro</option>
-            <option value="Biondo scuro">Biondo scuro</option>
-            <option value="Biondo">Biondo</option>
-            <option value="Biondo chiaro">Biondo chiaro</option>
-            <option value="Biondo chiarissimo">Biondo chiarissimo</option>
-            <option value="Platino">Platino</option>
-            <option value="Albino">Albino</option>
-          </select>
-        </p>
-        <p>
-          <label htmlFor="characterEyeColour">Colore degli occhi:</label>
-          <select className="characterEyeColour" name="characterEyeColour">
-            <option disabled selected value="">
-              Seleziona un opzione
-            </option>
-            /* Percentuale Marroni: 70% */
-            <option value="Marroni">Marroni</option>
-            /* Percentuale Blu: 10% */
-            <option value="Blu">Blu</option>
-            /* Percentuale Nocciola: 5% */
-            <option value="Nocciola">Nocciola</option>
-            /* Percentuale Ambra: 5% */
-            <option value="Ambra">Ambra</option>
-            /* Percentuale Grigi: 3% */
-            <option value="Grigi">Grigi</option>
-            /* Percentuale Verdi: 2% */
-            <option value="Verdi">Verdi</option>
-            /* Percentuale Rossi: 1% */
-            <option value="Rossi">Rossi</option>
-          </select>
-        </p>
+        <div className="anagraphic">
+          <p className="name">
+            <label htmlFor="characterName">Nome:</label>
+            <input
+              type="text"
+              className="characterName"
+              name="characterName"
+              value=""
+            />
+          </p>
+          <p className="surname">
+            <label htmlFor="characterSurname">Cognome:</label>
+            <input
+              type="text"
+              className="characterSurname"
+              name="characterSurname"
+              value=""
+            />
+          </p>
+          <p>
+            <label htmlFor="characterSex">Sesso:</label>
+            <select className="characterSex" name="characterSex" required>
+              <option disabled selected value="">
+                Seleziona un opzione
+              </option>
+              <option value="Maschio">Maschio</option>
+              <option value="Femmina">Femmina</option>
+            </select>
+          </p>
+          <p>
+            <label htmlFor="characterBirthday">Compleanno:</label>
+            <input
+              type="date"
+              className="characterBirthday"
+              name="characterBirthday"
+            />
+          </p>
+          <p>
+            <label htmlFor="characterZodiacSign">Segno zodiacale:</label>
+            <select className="characterZodiacSign" name="characterZodiacSign">
+              <option disabled selected value="">
+                Seleziona un opzione
+              </option>
+              <option value="Acquario">Acquario</option>
+              <option value="Pesci">Pesci</option>
+              <option value="Ariete">Ariete</option>
+              <option value="Toro">Toro</option>
+              <option value="Gemelli">Gemelli</option>
+              <option value="Cancro">Cancro</option>
+              <option value="Leone">Leone</option>
+              <option value="Vergine">Vergine</option>
+              <option value="Bilancia">Bilancia</option>
+              <option value="Scorpione">Scorpione</option>
+              <option value="Sagittario">Sagittario</option>
+              <option value="Capricorno">Capricorno</option>
+            </select>
+          </p>
+          <p>
+            <label htmlFor="characterZodiacAffinity">Affinità zodiacale</label>
+            <select
+              className="characterZodiacAffinity"
+              name="characterZodiacAffinity"
+            >
+              <option disabled selected value="">
+                Seleziona un opzione (Facoltativo)
+              </option>
+              <option value="Acquario">Acquario</option>
+              <option value="Pesci">Pesci</option>
+              <option value="Ariete">Ariete</option>
+              <option value="Toro">Toro</option>
+              <option value="Gemelli">Gemelli</option>
+              <option value="Cancro">Cancro</option>
+              <option value="Leone">Leone</option>
+              <option value="Vergine">Vergine</option>
+              <option value="Bilancia">Bilancia</option>
+              <option value="Scorpione">Scorpione</option>
+              <option value="Sagittario">Sagittario</option>
+              <option value="Capricorno">Capricorno</option>
+            </select>
+          </p>
+          <p>
+            <label htmlFor="characterOrientation">Orientazione:</label>
+            <select
+              className="characterOrientation"
+              name="characterOrientation"
+            >
+              <option disabled selected value="">
+                Seleziona un opzione
+              </option>
+              <option value="Etero">Etero</option>
+              <option value="Asessuale">Asessuale</option>
+              <option value="Omosessuale">Omosessuale (Gay/Lesbica)</option>
+              <option value="Bisessuale">Bisessuale</option>
+              <option value="Pansessuale">Pansessuale</option>
+              <option value="Polisessuale">Polisessuale</option>
+            </select>
+          </p>
+          <p>
+            <label htmlFor="characterMoralAlignment">Moralità:</label>
+            <select
+              className="characterMoralAlignment"
+              name="characterMoralAlignment"
+            >
+              <option disabled selected value="">
+                Seleziona un opzione
+              </option>
+              <option value="Legale Buono">Legale Buono</option>
+              <option value="Neutrale Buono">Neutrale Buono</option>
+              <option value="Caotico Buono">Caotico Buono</option>
+              <option value="Neutrale Legale">Neutrale Legale</option>
+              <option value="Neutrale Puro">Neutrale Puro</option>
+              <option value="Neutrale Caotico">Neutrale Caotico</option>
+              <option value="Legale Malvagio">Legale Malvagio</option>
+              <option value="Neutrale Malvagio">Neutrale Malvagio</option>
+              <option value="Caotico Malvagio">Caotico Malvagio</option>
+            </select>
+          </p>
+          <p>
+            <label htmlFor="characterHeight">Altezza:</label>
+            <input
+              type="text"
+              className="characterHeight"
+              name="characterHeight"
+              value=""
+            />
+          </p>
+          <p>
+            <label htmlFor="characterWeight">Peso:</label>
+            <input
+              type="text"
+              className="characterWeight"
+              name="characterWeight"
+              value=""
+            />
+          </p>
+          <p>
+            <label htmlFor="characterHairType">Tipologia di capelli:</label>
+            <select className="characterHairType" name="characterHairType">
+              <option disabled selected value="">
+                Seleziona un opzione
+              </option>
+              <option value="Lisci e sottili">Lisci e sottili</option>
+              <option value="Lisci e spessi">Lisci e spessi</option>
+              <option value="Ondulati">Ondulati</option>
+              <option value="Mossi e sottili">Mossi e sottili</option>
+              <option value="Mossi e spessi">Mossi e spessi</option>
+              <option value="Mossi e foltissimi">Mossi e foltissimi</option>
+              <option value="Riccio morbclasso dal diametro ampio">
+                Riccio morbclasso dal diametro ampio
+              </option>
+              <option value="Ricci a spirale">Ricci a spirale</option>
+              <option value="Ricci a cavatappi">Ricci a cavatappi</option>
+              <option value="Ricci piccolissimi">Ricci piccolissimi</option>
+              <option value="Ricci a Z">Ricci a Z</option>
+              <option value="Ricci afro">Ricci afro</option>
+            </select>
+          </p>
+          <p>
+            <label htmlFor="characterHairLength">Lunghezza dei capelli:</label>
+            <select className="characterHairLength" name="characterHairLength">
+              <option disabled selected value="">
+                Seleziona un opzione
+              </option>
+              <option value="Calvo/a">Calvo/a</option>
+              <option value="Rasati">Rasati</option>
+              <option value="Corti">Corti</option>
+              <option value="Medi">Medi</option>
+              <option value="Lunghi">Lunghi</option>
+              <option value="Lunghissimi">Lunghissimi</option>
+            </select>
+          </p>
+          <p>
+            <label htmlFor="characterHairColour">Colore dei capelli:</label>
+            <select className="characterHairColour" name="characterHairColour1">
+              <option disabled selected value="">
+                Seleziona un opzione
+              </option>
+              <option value="Nero">Nero</option>
+              <option value="Bruno">Bruno</option>
+              <option value="Castano scuro">Castano scuro</option>
+              <option value="Castano">Castano</option>
+              <option value="Castano chiaro">Castano chiaro</option>
+              <option value="Rosso scuro">Rosso scuro</option>
+              <option value="Rosso">Rosso</option>
+              <option value="Rosso chiaro">Rosso chiaro</option>
+              <option value="Biondo scuro">Biondo scuro</option>
+              <option value="Biondo">Biondo</option>
+              <option value="Biondo chiaro">Biondo chiaro</option>
+              <option value="Biondo chiarissimo">Biondo chiarissimo</option>
+              <option value="Platino">Platino</option>
+              <option value="Albino">Albino</option>
+            </select>
+          </p>
+          <p>
+            <label htmlFor="characterEyeColour">Colore degli occhi:</label>
+            <select className="characterEyeColour" name="characterEyeColour">
+              <option disabled selected value="">
+                Seleziona un opzione
+              </option>
+              /* Percentuale Marroni: 70% */
+              <option value="Marroni">Marroni</option>
+              /* Percentuale Blu: 10% */
+              <option value="Blu">Blu</option>
+              /* Percentuale Nocciola: 5% */
+              <option value="Nocciola">Nocciola</option>
+              /* Percentuale Ambra: 5% */
+              <option value="Ambra">Ambra</option>
+              /* Percentuale Grigi: 3% */
+              <option value="Grigi">Grigi</option>
+              /* Percentuale Verdi: 2% */
+              <option value="Verdi">Verdi</option>
+              /* Percentuale Rossi: 1% */
+              <option value="Rossi">Rossi</option>
+            </select>
+          </p>
+        </div>
         <p className="attributes">
           <div>
             <h1>Attributi</h1>
