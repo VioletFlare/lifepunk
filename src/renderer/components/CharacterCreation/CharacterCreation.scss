@@ -1,10 +1,15 @@
-form {
-  background-color: #fff;
+@use '../../styles/Breakpoints.scss';
+@use '../../styles/Forms.scss';
+
+.characterCreationForm {
+  padding: 10px;
+  height: 100vh;
+  color: lime;
 
   p:not(p.attributes):not(p.favoriteColors) {
     display: flex;
-    height: 32px;
     justify-content: space-between;
+    padding-bottom: 5px;
   }
 
   p.attributes, p.favoriteColors {
@@ -12,10 +17,20 @@ form {
     height: auto;
     margin: auto 0;
     vertical-align: middle;
+    padding-top: 10px;
+
+    ul {
+      li {
+        padding: {
+          left: 5px;
+          right: 5px;
+        }
+        display: inline-block;
+      }
+    }
   }
 
   label {
-    display: block;
     margin: auto 0;
   }
 
@@ -34,8 +49,22 @@ form {
   .attributes {
     div {
       display: flex;
-      height: 32px;
       flex-wrap: wrap;
+    }
+  }
+
+  .favoriteColors {
+    div {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .submit {
+    padding-top: 10px;
+
+    input[type=submit] {
+      margin: 0 auto;
     }
   }
 }

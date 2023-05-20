@@ -1,0 +1,13 @@
+form {
+  input:not([type=checkbox]) {
+    width: 250px;
+  }
+
+  input[type=date] {
+    width: 253px;
+  }
+
+  select {
+    width: 258px;
+  }
+}

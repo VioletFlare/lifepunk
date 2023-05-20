@@ -8,7 +8,7 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/prefer-stateless-function': 'off',
     'jsx-a11y/label-has-associated-control': 'off',
-    'react/jsx-no-comment-textnodes',
+    'react/jsx-no-comment-textnodes': 'off',
   },
   parserOptions: {
     ecmaVersion: 2020,
