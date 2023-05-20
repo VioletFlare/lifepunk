@@ -4,7 +4,6 @@ form {
   p:not(p.attributes):not(p.favoriteColors) {
     display: flex;
     height: 32px;
-    width: 50%;
     justify-content: space-between;
   }
 
@@ -13,19 +12,16 @@ form {
     height: auto;
     margin: auto 0;
     vertical-align: middle;
-    width: 100px;
   }
 
   label {
     display: block;
     margin: auto 0;
-    width: 250px;
   }
 
   input[type=text], input[type=checkbox], input[type=date], select {
     text-align: left;
     vertical-align: middle;
-    width: 250px;
   }
 
   h1 {
@@ -39,6 +35,7 @@ form {
     div {
       display: flex;
       height: 32px;
+      flex-wrap: wrap;
     }
   }
 }
